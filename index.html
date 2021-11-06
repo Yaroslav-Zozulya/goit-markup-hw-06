@@ -792,13 +792,63 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button type="button" data-modal-close class="modal-btn">
                     <svg class="modal-close">
                         <use href="./img/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <form class="modal-form" action="#">
+                    <p class="modal-title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <label class="modal-form-label">
+                        Имя
+                        <span class="form-input-wrap">
+                            <input class="modal-form-input" type="text" />
+                            <svg class="modal-form-input-icon">
+                                <use
+                                    href="./img/icons.svg#icon-user-name"
+                                ></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-label">
+                        Телефон
+                        <span class="form-input-wrap">
+                            <input class="modal-form-input" type="tel" />
+                            <svg class="modal-form-input-icon">
+                                <use href="./img/icons.svg#icon-user-tel"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-label">
+                        Почта
+                        <span class="form-input-wrap">
+                            <input class="modal-form-input" type="email" />
+                            <svg class="modal-form-input-icon">
+                                <use
+                                    href="./img/icons.svg#icon-user-email"
+                                ></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-label">
+                        Комментарий
+                        <textarea class="modal-form-message"></textarea>
+                    </label>
+                    <label class="modal-form-label">
+                        <input
+                            class="modal-form-checkbox"
+                            type="checkbox"
+                        />Соглашаюсь с рассылкой и принимаю
+                        <a href="#">Условия договора</a>
+                    </label>
+                    <button class="modal-form-button" type="submit">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
