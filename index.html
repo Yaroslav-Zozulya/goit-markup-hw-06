@@ -806,7 +806,14 @@
                     <label class="modal-form-label">
                         Имя
                         <span class="form-input-wrap">
-                            <input class="modal-form-input" type="text" />
+                            <input
+                                class="modal-form-input"
+                                type="text"
+                                name="user-name"
+                                minlength="3"
+                                pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                                title="Допустимы только знаки кириллицы и латиницы"
+                            />
                             <svg class="modal-form-input-icon">
                                 <use
                                     href="./img/icons.svg#icon-user-name"
@@ -817,7 +824,14 @@
                     <label class="modal-form-label">
                         Телефон
                         <span class="form-input-wrap">
-                            <input class="modal-form-input" type="tel" />
+                            <input
+                                class="modal-form-input"
+                                type="tel"
+                                name="user-phone"
+                                minlength="12"
+                                pattern="[0-9]{12}"
+                                title="380123456789"
+                            />
                             <svg class="modal-form-input-icon">
                                 <use href="./img/icons.svg#icon-user-tel"></use>
                             </svg>
@@ -826,7 +840,12 @@
                     <label class="modal-form-label">
                         Почта
                         <span class="form-input-wrap">
-                            <input class="modal-form-input" type="email" />
+                            <input
+                                class="modal-form-input"
+                                type="email"
+                                name="user-email"
+                                required
+                            />
                             <svg class="modal-form-input-icon">
                                 <use
                                     href="./img/icons.svg#icon-user-email"
@@ -834,16 +853,25 @@
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-label">
+                    <label class="modal-form-label modal-form-label-message">
                         Комментарий
-                        <textarea class="modal-form-message"></textarea>
+                        <textarea
+                            class="modal-form-message"
+                            name="user-message"
+                            placeholder="Введите текст"
+                        ></textarea>
                     </label>
-                    <label class="modal-form-label">
-                        <input
-                            class="modal-form-checkbox"
-                            type="checkbox"
-                        />Соглашаюсь с рассылкой и принимаю
-                        <a href="#">Условия договора</a>
+                    <input
+                        class="modal-check-box visually-hidden"
+                        type="checkbox"
+                        id="accept"
+                    />
+                    <label
+                        class="modal-form-label modal-form-checkbox-label"
+                        for="accept"
+                    >
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="modal-form-link">Условия договора</a>
                     </label>
                     <button class="modal-form-button" type="submit">
                         Отправить
