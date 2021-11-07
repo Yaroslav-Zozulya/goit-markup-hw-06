@@ -790,9 +790,24 @@
                         </li>
                     </ul>
                 </div>
+                <form class="footer-form" action="#">
+                    <p class="footer-form-title">Подпишитесь на рассылку</p>
+                    <input
+                        class="footer-form-input"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                    />
+                    <button class="footer-form-button" type="submit">
+                        Подписаться
+                        <svg class="modal-form-button-icon">
+                            <use href="./img/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </footer>
-        <div class="backdrop" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" data-modal-close class="modal-btn">
                     <svg class="modal-close">
