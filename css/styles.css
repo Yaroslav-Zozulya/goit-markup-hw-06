@@ -876,6 +876,7 @@ img {
     transition: border-color 250ms var(--transition-timing);
 }
 
+.modal-form-message:hover,
 .modal-form-input:focus,
 .modal-form-message:focus {
     outline: none;
