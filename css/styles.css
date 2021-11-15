@@ -569,10 +569,6 @@ img {
     color: var(--first-background-color);
 }
 
-.footer-social {
-    margin-right: 93px;
-}
-
 .footer-social-title {
     margin-bottom: 20px;
     font-weight: 700;
@@ -595,6 +591,11 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--links-hover-color);
+}
+
+.footer-form {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .footer-form-title {
@@ -948,6 +949,11 @@ img {
 .modal-check-box:checked + .modal-form-checkbox-label::before {
     border: none;
     background-image: url(../img/check.svg);
+}
+
+.modal-form-checkbox-label:hover::before,
+.modal-check-box:focus + .modal-form-checkbox-label::before {
+    border-color: var(--links-hover-color);
 }
 
 .modal-form-checkbox-label::before {
