@@ -965,6 +965,7 @@ img {
     cursor: pointer;
     border: 2px solid var(--primery-title-color);
     border-radius: 2px;
+    transition: border-color 250ms var(--transition-timing);
 }
 
 .modal-form-link {
